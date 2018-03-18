@@ -43,7 +43,8 @@ window.onload = function() {
   var w = prompt('あなたの体重(kg)を入力してください', '');
   
   var b = w / (h * h);
-  
+  var x = Math.round(b * 10) / 10;
+
   var r = "";
   
   if (b < 18.5) {
@@ -58,7 +59,7 @@ window.onload = function() {
 
   document.getElementById("height").textContent = h;
   document.getElementById("weight").textContent = w;
-  document.getElementById("bmi").textContent = b;
+  document.getElementById("bmi").textContent = x;
   document.getElementById("result").textContent = r;
 
 }
