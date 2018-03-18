@@ -1,4 +1,4 @@
-# cybozu
+# BMI
 
 cybozu developer network
 はじめようJavaScript
