@@ -8,7 +8,10 @@ window.onload = function() {
   var result = document.getElementById("result").textContent;  
 
   // ダイアログで身長・体重入力
-  var h = prompt('あなたの身長(m)を入力してください', '');
+  var h = prompt('あなたの身長(cm)を入力してください', '');
+  var h = h/100
+  console.log(h);
+  
   var w = prompt('あなたの体重(kg)を入力してください', '');
   
   // BMIの計算
@@ -31,7 +34,7 @@ window.onload = function() {
   }
 
   // htmlの各要素へ入力
-  document.getElementById("height").textContent = h;
+  document.getElementById("height").textContent = h*100;
   document.getElementById("weight").textContent = w;
   document.getElementById("bmi").textContent = x;
   document.getElementById("result").textContent = r;
